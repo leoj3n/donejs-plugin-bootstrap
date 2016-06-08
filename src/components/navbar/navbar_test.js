@@ -1,7 +1,7 @@
 import QUnit from 'steal-qunit';
 import * as Navbar from './navbar';
 import $ from 'jquery';
-import Stache from 'can-stache';
+import stache from 'can-stache';
 import viewModel from 'can-view-model';
 
 var vm, template, $component;
@@ -26,7 +26,7 @@ QUnit.test( 'basics', function() {
 // Component unit tests
 QUnit.module( 'bootstrap-navbar component',{
 	beforeEach: function () {
-		template = Stache(
+		template = stache(
       '<bootstrap-navbar>' +
         '<a href="frst">First</a>' +
         '<a href="scnd">Second</a>' +
