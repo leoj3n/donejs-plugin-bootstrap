@@ -1,7 +1,7 @@
 @parent my-app
-@module {can.Component} my-app/bootstrap/navbar <bootstrap-navbar>
+@module {can.Component} donejs-plugin-bootstrap/components/navbar <bootstrap-navbar>
 
-The bootstrap-navbar component implements a Bootstrap navbar.
+This component implements a Bootstrap navbar.
 
 @signature `<bootstrap-navbar>`
 
