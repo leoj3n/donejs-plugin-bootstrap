@@ -1,5 +1,11 @@
-@page donejs-plugin-bootstrap
+@parent donejs-plugin-bootstrap
+@module {can.Component} donejs-plugin-bootstrap <donejs-plugin-bootstrap>
 
-# donejs-plugin-bootstrap
+A short description of the donejs-plugin-bootstrap component
 
-Bootstrap components for your DoneJS app
+@signature `<donejs-plugin-bootstrap>`
+
+@body
+
+## Use
+

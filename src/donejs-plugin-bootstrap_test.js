@@ -1,9 +1,10 @@
 import QUnit from 'steal-qunit';
-import plugin from './donejs-plugin-bootstrap';
+import { ViewModel } from './donejs-plugin-bootstrap';
 
+// ViewModel unit tests
 QUnit.module('donejs-plugin-bootstrap');
 
-QUnit.test('Initialized the plugin', function(){
-  QUnit.equal(typeof plugin, 'function');
-  QUnit.equal(plugin(), 'This is the donejs-plugin-bootstrap plugin');
+QUnit.test('Has message', function(){
+  var vm = new ViewModel();
+  QUnit.equal(vm.message, 'This is the donejs-plugin-bootstrap component');
 });
