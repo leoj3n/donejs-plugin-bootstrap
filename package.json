@@ -26,17 +26,7 @@
     "document": "documentjs",
     "develop": "done-serve --static --develop --port 8080"
   },
-  "main": "dist/cjs/donejs-plugin-bootstrap",
-  "browser": {
-    "transform": [
-      "cssify"
-    ]
-  },
-  "browserify": {
-    "transform": [
-      "cssify"
-    ]
-  },
+  "main": "donejs-plugin-bootstrap/donejs-plugin-bootstrap",
   "keywords": [],
   "system": {
     "main": "donejs-plugin-bootstrap",
@@ -53,19 +43,46 @@
     "directories": {
       "lib": "src"
     },
-    "npmAlgorithm": "flat"
+    "npmAlgorithm": "flat",
+    "meta": {
+      "bootstrap/dist/js/umd/tooltip": {
+        "deps": [
+          "tether"
+        ]
+      },
+      "bootstrap/dist/js/umd/popover": {
+        "deps": [
+          "tether"
+        ]
+      },
+      "tether": {
+        "format": "global"
+      }
+    }
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
+    "can-component": "^3.0.0-pre.8",
+    "can-define": "^0.7.4",
+    "can-map": "^3.0.0-pre.5",
+    "can-map-define": "^3.0.0-pre.2",
+    "can-stache": "^3.0.0-pre.7",
+    "can-view-autorender": "^3.0.0-pre.4",
+    "can-zone": "^0.5.5",
+    "jquery": "~2.2.1",
+    "tether": "^1.3.2"
+  },
   "devDependencies": {
     "documentjs": "^0.4.2",
+    "done-serve": "^0.3.0-pre.0",
+    "donejs-cli": "^0.10.0-pre.0",
+    "generator-donejs": "^0.10.0-pre.4",
     "jshint": "^2.9.1",
-    "cssify": "^0.6.0",
     "steal": "^0.16.0",
+    "steal-css": "^0.4.1",
+    "steal-stache": "^3.0.0-pre.2",
     "steal-qunit": "^0.1.1",
     "steal-tools": "^0.16.0",
-    "testee": "^0.2.4",
-    "generator-donejs": "^0.10.0-pre.0",
-    "donejs-cli": "^0.10.0-pre.0",
-    "done-serve": "^0.3.0-pre.0"
+    "testee": "^0.2.4"
   }
 }
