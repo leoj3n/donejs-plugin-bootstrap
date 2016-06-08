@@ -3,7 +3,7 @@ import DefineMap from 'can-define/map/';
 import './navbar.less';
 import template from './navbar.stache';
 
-import $ from "jquery";
+import "jquery";
 import "donejs-plugin-bootstrap/css/nav.css";
 import "donejs-plugin-bootstrap/css/navbar.css";
 import "donejs-plugin-bootstrap/css/animation.css";

@@ -4,9 +4,8 @@
 
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
     <div class="nav navbar-nav">
-      <a class="nav-item nav-link" href="#">Looking Good</a>
-      {{#each pages}}
-        <a class="nav-item nav-link{{#if active}} active{{/if}}" href="{{url}}">{{name}}{{#if active}} <span class="sr-only">(current)</span>{{/if}}</a>
+      {{#each list}}
+        <a class="nav-item nav-link{{#if active}} active{{/if}}" href="{{link}}">{{text}}{{#if active}} <span class="sr-only">(current)</span>{{/if}}</a>
       {{/each}}
     </div>
   </div>
