@@ -1,46 +1,21 @@
 <script type="text/stache" id="demo" can-autorender>
   <can-import from="donejs-plugin-bootstrap/components/navbar/" />
   <can-import from="donejs-plugin-bootstrap/components/core/" />
-  <dummy-element></dummy-element>
+  <bootstrap-navbar list="{items}"></bootstrap-navbar>
+  <bootstrap-navbar>
+    <a href="one">One</a>
+    <a href="two">Two</a>
+    <a href="three" active>Three</a>
+  </bootstrap-navbar>
 </script>
 <script src="../../../node_modules/steal/steal.js"
         main="can-view-autorender">
 
-  // import CanMap from 'can-map';
-  // import viewModel from 'can-view-model';
-  // import $ from 'jquery';
-  //
-  // var $demo = $("#demo");
-  // viewModel($demo, "items", [
-  //     {link: 'frst', text: 'First', active: false},
-  //     {link: 'scnd', text: 'Second', active: false},
-  //     {link: 'thrd', text: 'Third', active: true}
-  //   ]);
-  // console.log( viewModel($demo, "items") );
-  //
-  //=> instead of dummy: <bootstrap-navbar list="{items}"></bootstrap-navbar>
+  import viewModel from 'can-view-model';
 
-  import Component from 'can-component';
-  import DefineMap from 'can-define/map/';
-  import stache from 'can-stache';
-  import $ from 'jquery';
-  import 'donejs-plugin-bootstrap/components/navbar/';
-
-  var VM = DefineMap.extend({
-    items: {
-      type: "*",
-      value: [
-        {link: 'frst', text: 'First', active: false},
-        {link: 'scnd', text: 'Second', active: false},
-        {link: 'thrd', text: 'Third', active: true}
-      ]
-    }
-  });
-
-  Component.extend({
-    tag: 'dummy-element',
-    ViewModel: VM,
-    template: stache('<bootstrap-navbar list="{items}"></bootstrap-navbar>')
-  });
-
+  viewModel(document.getElementById("demo"), 'items', [
+      {link: 'frst', text: 'First', active: false},
+      {link: 'scnd', text: 'Second', active: false},
+      {link: 'thrd', text: 'Third', active: true}
+    ]);
 </script>
