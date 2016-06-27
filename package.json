@@ -47,12 +47,14 @@
     "meta": {
       "bootstrap/dist/js/umd/tooltip": {
         "deps": [
-          "tether"
+          "tether",
+          "jquery"
         ]
       },
       "bootstrap/dist/js/umd/popover": {
         "deps": [
-          "tether"
+          "tether",
+          "jquery"
         ]
       },
       "tether": {
@@ -79,11 +81,11 @@
     "donejs-cli": "^0.10.0-pre.0",
     "generator-donejs": "^0.10.0-pre.4",
     "jshint": "^2.9.1",
-    "steal": "^0.16.0",
+    "steal": "stealjs/steal#major",
     "steal-css": "^0.4.1",
     "steal-stache": "^3.0.0-pre.2",
     "steal-qunit": "^0.1.1",
-    "steal-tools": "^0.16.0",
+    "steal-tools": "stealjs/steal-tools#major",
     "testee": "^0.2.4"
   }
 }
