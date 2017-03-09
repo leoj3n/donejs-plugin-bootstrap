@@ -1,3 +1,7 @@
+<div class="orig-navbar">
+  <content></content>
+</div>
+
 {{#if list}}
 <nav class="navbar navbar-light">
 

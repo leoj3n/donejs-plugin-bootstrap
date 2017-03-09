@@ -7,6 +7,7 @@
     "type": "git",
     "url": "git://github.com/leoj3n/donejs-plugin-bootstrap.git"
   },
+  "license": "MIT",
   "author": {
     "name": "Joel Kuzmarski",
     "email": "",
@@ -64,28 +65,28 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
-    "can-component": "^3.0.0-pre.8",
-    "can-define": "^0.7.4",
-    "can-map": "^3.0.0-pre.5",
-    "can-map-define": "^3.0.0-pre.2",
-    "can-stache": "^3.0.0-pre.7",
-    "can-view-autorender": "^3.0.0-pre.4",
-    "can-view-model": "^3.0.0-pre.4",
-    "can-zone": "^0.5.5",
-    "jquery": "~2.2.1",
+    "can-component": "canjs/can-component#master",
+    "can-define": "canjs/can-define#master",
+    "can-map": "canjs/can-map#master",
+    "can-map-define": "canjs/can-map-define#master",
+    "can-stache": "canjs/can-stache#master",
+    "can-view-autorender": "canjs/can-view-autorender#master",
+    "can-view-model": "canjs/can-view-model#master",
+    "can-zone": "canjs/can-zone#master",
+    "jquery": "~3.0.0",
     "tether": "^1.3.2"
   },
   "devDependencies": {
-    "documentjs": "^0.4.2",
-    "done-serve": "^0.3.0-pre.0",
-    "donejs-cli": "^0.10.0-pre.0",
-    "generator-donejs": "^0.10.0-pre.4",
-    "jshint": "^2.9.1",
+    "documentjs": "^0.4.4",
+    "done-serve": "donejs/done-serve#can3",
+    "donejs-cli": "donejs/cli#can3",
+    "generator-donejs": "donejs/generator-donejs#can3",
+    "jshint": "^2.9.2",
     "steal": "stealjs/steal#major",
-    "steal-css": "^0.4.1",
-    "steal-stache": "^3.0.0-pre.2",
-    "steal-qunit": "^0.1.1",
+    "steal-css": "stealjs/steal-css#master",
+    "steal-stache": "canjs/steal-stache#master",
+    "steal-qunit": "stealjs/steal-qunit#master",
     "steal-tools": "stealjs/steal-tools#major",
-    "testee": "^0.2.4"
+    "testee": "bitovi/testee#update-dependencies"
   }
 }
